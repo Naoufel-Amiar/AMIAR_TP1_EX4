@@ -1,0 +1,35 @@
+﻿<Window x:Class="AMIAR_EX4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AMIAR_EX4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="White" Offset="0.179"/>
+                <GradientStop Color="#FFBB1515" Offset="1"/>
+                <GradientStop Color="#FF740D0D" Offset="0.714"/>
+                <GradientStop Color="#FFAE1313" Offset="0.548"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!-- label et text box pour la chaine que l'utilisateur rentre-->
+        <TextBox HorizontalAlignment="Left" Height="39" Margin="405,112,0,0"  x:Name="TB_ENTREE_LISTE" VerticalAlignment="Top" Width="181"/>
+        <Label Content="Entrez votre chaine : { nb, nb, nb }" HorizontalAlignment="Left"  Height="30" Margin="204,112,0,0" VerticalAlignment="Top" Width="196"/>
+
+        
+        <!-- label et text box pour afficher la valeur la plus petite et grande-->
+        <TextBox HorizontalAlignment="Left" Height="78" Margin="405,193,0,0"  Name="TB_DISPLAY_2" VerticalAlignment="Top" Width="181"/>
+        <Label Content="Resultat" HorizontalAlignment="Left"  Height="30" Margin="340,217,0,0" VerticalAlignment="Top" Width="60"/>
+
+        
+        <!-- Boutton qui declenche la comparaison-->
+        <Button Content="Button" Name="BT_CALCUL" HorizontalAlignment="Left" Height="85" Margin="405,292,0,0" VerticalAlignment="Top" Width="181" Click="BT_CALCUL_Click"/>
+
+
+    </Grid>
+</Window>
